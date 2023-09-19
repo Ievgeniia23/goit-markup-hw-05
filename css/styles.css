@@ -591,6 +591,7 @@ color: #ffffff;
 .close-btn:focus {
   background-color: var(--OCEAN, #404BBF); 
   fill: #ffffff;
+  border: none; 
 }
 
 /*==============MODAL WINDOW================*/ 
