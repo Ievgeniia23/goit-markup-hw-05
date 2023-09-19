@@ -448,9 +448,15 @@ gap: 16px;
 }
 /*======Footer forma======*/
 
-.subscribe-wrapper {
-  display: flex;
-  gap: 24px;
+
+.form-footer-title {
+  color: var(--WHITE, #FFF);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .subscribe-form {
@@ -461,33 +467,15 @@ margin-left: 80px;
 gap: 24px;
 }
 
-.subscribe-wrapper {
-  display: flex;
-  gap: 24px;
-}
-
-.subscribe-label-wrapper {
-  display: block;
-}
-
-.subscribe-label {
-  color: var(--WHITE, #FFF);
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  font-weight: 500;
-  margin-bottom: 16px;
-  display: block;
-}
 .subscribe-input {
   width: 264px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--WHITE, #FFF);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background: var(--NAVY-BLUE, #2E2F42);
-  padding: 16px 8px;
+  background: transparent;
+  padding left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 ::placeholder {
@@ -515,9 +503,9 @@ letter-spacing: 0.04em;
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-weight: 500;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  margin-top: 40px;
+  border: none;
 }
 .subscribe-btn-icon {
   margin-left: 16px;
@@ -533,6 +521,7 @@ letter-spacing: 0.04em;
   height: 100%;
   background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
   z-index: 999999;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   opacity: 0;
   visibility: hidden;
@@ -562,8 +551,10 @@ letter-spacing: 0.04em;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   }
+  .close-btn-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
 
-  
   .close-btn-icon:hover
   .close-btn-icon:focus {
     fill: #ffffff;
@@ -580,7 +571,7 @@ letter-spacing: 0.04em;
   align-items: center;
   justify-content: center;
   background-color:  var(--CORNFLOWER, #E7E9FC);
-  border: rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.1)
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   padding: 0;
 }
@@ -631,6 +622,7 @@ margin-bottom: 16px;
     padding-left: 38px;
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
      }
 
    .contact-input:focus {
