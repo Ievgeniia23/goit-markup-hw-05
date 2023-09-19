@@ -446,7 +446,13 @@ gap: 16px;
 .social-footer-list-link:focus {
     background-color: #31D0AA;
 }
-  
+/*======Footer forma======*/
+
+.subscribe-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
 .subscribe-form {
 display: flex;
 width: 453px;
@@ -466,9 +472,10 @@ gap: 24px;
 
 .subscribe-label {
   color: var(--WHITE, #FFF);
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   font-weight: 500;
   margin-bottom: 16px;
   display: block;
@@ -492,18 +499,16 @@ line-height: 2.0;
 letter-spacing: 0.04em;
 }
 
-
-
 .subscribe-btn-wrapper {
   display: flex;
 }
-
 
 .subscribe-btn {
   display: flex;
   font-family: "Roboto", sans-serif;
   padding: 8px 24px;
   align-items: center;
+  justify-content: center;
   border-radius: 4px;
   color: var(--WHITE, #FFF);
   font-size: 16px;
@@ -517,7 +522,7 @@ letter-spacing: 0.04em;
 .subscribe-btn-icon {
   margin-left: 16px;
 }
-
+/*======Footer forma======*/
 
 /*==============BACKDROP================*/ 
 .backdrop {
